@@ -21,7 +21,7 @@ class _FormWidgetState extends State<FormWidget> {
           key: _formKey,
           child: Column(
             children: [
-              // 1. TextField & Validasi
+              // ini textfield sama validasinya
               TextFormField(
                 controller: _namaController,
                 decoration: const InputDecoration(labelText: 'Nama Lengkap'),
@@ -30,7 +30,7 @@ class _FormWidgetState extends State<FormWidget> {
               ),
               const SizedBox(height: 20),
 
-              // 2. Button & Event Handling (Dialog)
+              // ini button dan event handlingnya
               ElevatedButton(
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
@@ -53,7 +53,7 @@ class _FormWidgetState extends State<FormWidget> {
               ),
               const SizedBox(height: 20),
 
-              // 3. Gesture & BottomSheet
+              //ini gesture sama bottom sheetnya
               GestureDetector(
                 onTap: () {
                   showModalBottomSheet(

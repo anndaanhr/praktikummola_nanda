@@ -11,7 +11,7 @@ class FirstWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/IT.png2', width: 150, height: 150),
+            Image.asset('assets/IT.png', width: 150, height: 150),
             const SizedBox(height: 50),
             ElevatedButton(
               onPressed: () {},
