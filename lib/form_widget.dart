@@ -14,7 +14,7 @@ class _FormWidgetState extends State<FormWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Interactivity & Form')),
+      appBar: AppBar(title: const Text('Form')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Form(
@@ -24,9 +24,9 @@ class _FormWidgetState extends State<FormWidget> {
               // ini textfield sama validasinya
               TextFormField(
                 controller: _namaController,
-                decoration: const InputDecoration(labelText: 'Nama Lengkap'),
+                decoration: const InputDecoration(labelText: 'nama'),
                 validator: (value) =>
-                    value!.isEmpty ? 'Nama tidak boleh kosong!' : null,
+                    value!.isEmpty ? 'nama gak boleh kosong' : null,
               ),
               const SizedBox(height: 20),
 
@@ -60,12 +60,12 @@ class _FormWidgetState extends State<FormWidget> {
                     context: context,
                     builder: (context) => const Padding(
                       padding: EdgeInsets.all(20),
-                      child: Text('Ini Bottom Sheet dari GestureDetector!'),
+                      child: Text('ni bottomsheet'),
                     ),
                   );
                 },
                 child: const Text(
-                  'Klik untuk Info BottomSheet',
+                  'Klik bottomsheet',
                   style: TextStyle(
                     color: Colors.blue,
                     decoration: TextDecoration.underline,
